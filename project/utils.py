@@ -1,7 +1,18 @@
 
+
 import re
-import numpy as np
-from config import pre_process_config
+import numpy as np   
+from banglakit import lemmatizer as lem
+from banglakit.lemmatizer import BengaliLemmatizer  
+
+lemmatizer = BengaliLemmatizer()
+def lemmatize_text(text): 
+    lemmatized_text = []
+    for word in text.split():
+        lemmatized_text.append(lemmatizer.lemmatize(word, pos=lem.POS_PROPN))
+    return " ".join(lemmatized_text)
+
+
 
 def bert_label_maker(targets):
     list1=[]
@@ -13,7 +24,9 @@ def bert_label_maker(targets):
         list1=[]
     return col_list
 
-def preprocess_news(news,main_stopwords=pre_process_config.main_stopwords):
+
+
+def preprocess_news(news,main_stopwords):
     main_stopwords =main_stopwords.split(" ")
     news = remove_numbers(news)
     news = remove_extra_spaces(news)
@@ -95,3 +108,8 @@ def voting_with_model(model_list, X_test):
     # y_pred = np.argmax(y_pred, axis=1)
     return y_pred
 
+def shuffle_data(input_data,targets): 
+    shuffle=np.random.permutation(len(input_data))
+    input_data=input_data[shuffle]
+    targets=targets.iloc[shuffle]   
+    return input_data,targets
