@@ -1,7 +1,5 @@
 links
-scrap-data
 __pycache__
-doc
 news/
 setup.py
 data/ 
