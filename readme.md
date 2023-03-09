@@ -21,24 +21,26 @@ we also train a bert model for this project . that model gives the best result o
 traing tredisional models : 
 
 1. create a conda environment 
-   command : conda create -n name_of_env python=3.7
+ `conda create -n name_of_env python=3.7 `
 2. activate the environment
-    command : conda activate name_of_env
+ ` conda activate name_of_env  `
 3. install the requirements
-    command : pip install -r requirements.txt
+ ` pip install -r requirements.txt`
 4. run Ml_model.ipynb file 
 
 training bert model : 
 
 1. create a conda environment 
-   command : conda create -n name_of_env python=3.7
+ `conda create -n name_of_env python=3.7`
 2. activate the environment
-    command : conda activate name_of_env
+    `conda activate name_of_env`
 3. install the requirements
-    command : pip install -r requirements.txt
+   `pip install -r requirements.txt`
 4. install simpletransformers library 
-   conda install pytorch>=1.6 cudatoolkit=11.0 -c pytorch  [for gpu] 
-   conda install pytorch cpuonly -c pytorch [for cpu]
+ [for gpu] 
+   ` conda install pytorch>=1.6 cudatoolkit=11.0 -c pytorch ` 
+   [for cpu]
+   ` conda install pytorch cpuonly -c pytorch `
 5. run bert_multi_label_classification.ipynb file    
 
 
