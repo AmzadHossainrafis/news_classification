@@ -7,7 +7,7 @@ the dataset is made base on web scrapping from veriouse Bangli news websites . A
 
 preprocess data contain Title and content of the news article  also contain 9 label classes .Present classes are : 'ক্রেডিট রেটিং', 'পর্ষদ সভা', 'ইপিএস', 'প্রান্তিক প্রকাশ', 'পিই রেশিও', 'ডিভিডেন্ড', 'ব্লক মার্কেট', 'স্পট মার্কেট','লভ্যাংশ ঘোষণা'
 
-['download the dataset']()
+['download the dataset'](https://docs.google.com/spreadsheets/d/19lycLZvfOATJY-_ZdHrWEN1PtZRN3fuy7WxMvc3Cdc4/edit?usp=sharing)
 
 
 ### Model 
