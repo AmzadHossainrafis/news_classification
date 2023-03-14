@@ -34,7 +34,6 @@ def preprocess_news(news,main_stopwords):
     news = remove_stopwords(news,main_stopwords)
     news = remove_perenthesis(news)
     news = remove_prone(news)
-    news = remove_symbols(news)
     news = remove_dash(news)
     news = remove_3rdbreket(news)
     return news
