@@ -1,4 +1,4 @@
-# realease 1.0.0 
+# realease 1.0.0  tag: v1.0
 -----------------
 
 this is the first release of the project . this release contain the following things :
