@@ -1,6 +1,9 @@
 list_dir= { 
+    
+    'data_root_dir': r'C:\Users\Amzad\Desktop\news_classifcation\data\pre-processed-data',
     'data_dir': r'C:\Users\Amzad\Desktop\news_classifcation\data\pre-processed-data\data_with_15%_no_label.csv',
     'ml_model_ckpt_dir': r"C:\Users\Amzad\Desktop\news_classifcation\project\logs\model_ckpts",
+    'all_news_dir': r"C:\Users\Amzad\Desktop\news_classifcation\data\pre-processed-data\all_new_label.csv",
 }
 
 # bert config 
